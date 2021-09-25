@@ -1,0 +1,264 @@
+.navbar-brand img {
+  width: 300px !important;
+  height: auto !important;
+}
+.navbar-brand {
+  width: 35%;
+}
+.navbar {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+
+  /* background-color: #4D193B; */
+  color: white;
+
+  background-image: url("images/cosmic-feeling.jpeg");
+  background-size: cover;
+}
+
+.daymaker img {
+  width: 20%;
+  height: auto;
+}
+.intro {
+  font-size: 4em;
+  margin-top: 100px;
+  margin-bottom: 90px;
+}
+.daymaker {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.listen,
+.follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3em;
+  margin-left: 30px;
+}
+.listen-text,
+.follow-text {
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.listen-icons i,
+.follow-icons i {
+  margin: 0 10px;
+}
+
+.follow {
+  flex-direction: row;
+  margin: 30px;
+}
+.follow-text {
+  font-size: .8em;
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+
+.page hr {
+  width: 70%;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.page i:hover {
+  color: #FF82DA;
+}
+
+/*** MUSIC ***/
+
+.albums {
+  display: grid;
+  grid-template: auto auto auto / 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+  padding-top: 50px;
+
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.image {
+  margin 10px 10px;
+}
+.image img {
+  width: 100%;
+  height: auto;
+}
+.title {
+  font-size: 1.4em;
+  margin-top: 10px;
+}
+
+/*** SHOWS ***/
+
+.shows {
+  display: flex;
+  flex-direction: column;
+
+  width: 70%;
+  margin-bottom: 50px;
+  background-color: white;
+  border-radius: 5px;
+}
+.show {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin: 30px 30px;
+
+  color: black;
+}
+.show-date,
+.show-venue,
+.show-place {
+  text-align: left;
+  width: 30%;
+}
+.show-date {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.show-place {
+  width: 20%;
+}
+.ticket-button {
+  border: 2px solid black;
+  border-radius: 5px;
+
+  padding: 5px 10px;
+  margin-left: auto;
+
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.ticket-button:hover {
+  background-color: black;
+  color: white;
+}
+
+/*** ABOUT ***/
+
+.portrait img {
+  width: 90%;
+  height: auto;
+}
+.about-text {
+  width: 70%;
+  text-align: center;
+  margin: 40px 0;
+
+  font-size: 1.4em;
+}
+
+
+
+/*** FOOTER ***/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #963275;
+}
+.github a {
+  color: white;
+}
+.github a:hover {
+  color: pink;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .navbar-brand img {
+    width: 200px !important;
+    height: auto !important;
+  }
+
+  .intro {
+    font-size: 2em;
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .daymaker img {
+    width: 60%;
+  }
+  .daymaker {
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 30px;
+  }
+  .listen {
+    font-size: 2em;
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .follow {
+    flex-direction: column;
+    font-size: 2em;
+  }
+  .follow-text {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .albums {
+    grid-template: auto auto auto / 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+    padding-top: 50px;
+
+    margin-bottom: 30px;
+  }
+
+  .show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 15px;
+  }
+  .show-date,
+  .show-venue,
+  .show-place {
+    width: 70%;
+    text-align: center;
+  }
+  .ticket-button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .portrait img {
+    width: 70%;
+  }
+  .about-text {
+    width: 70%;
+    text-align: center;
+    margin: 40px 0;
+
+    font-size: .9em;
+  }
+
+}
